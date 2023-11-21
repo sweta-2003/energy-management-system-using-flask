@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .forms{
+                
+                margin:6%;
+            }
+           .heading{
+            margin-top:3%;
+           }
+            
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+         <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+    </head>
+    <body>
+        <section class="container">
+            <div class="conntainer-fluid heading">
+            <h3>RESOURCES</h3>
+            </div>
+
+            <div class="container-fluid">
+                <form class="container forms" action="/addresource" method="post">
+            
+                    <div class="form-row">
+                      
+                        <div class="form-group col-md-6">
+                            <label for="id">Id</label>
+                            <input type="text" class="form-control" id="id" name="id" placeholder="Enter id no">
+                          </div>
+                      <div class="form-group col-md-6">
+                        <label for="Date">Name</label>
+                        <input type="text" class="form-control" id="date" name="name" placeholder="name">
+                      </div>
+                     
+                     
+                      
+                    </div>
+                    
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="status">Email</label>
+                        <input type="text" class="form-control" id="rname" name="email" placeholder="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="resource_name">Designation</label>
+                        <input type="text" class="form-control" id="rname" name="designation" placeholder="Designation">
+                    </div>
+                
+                   
+                      
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="status">Contact no</label>
+                          <input type="text" class="form-control" id="rname" name="contactno" placeholder="ph no">
+                      </div>
+                     
+                  
+                     
+                        
+                      </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="totalday">Employee Id</label>
+                        <input type="text" class="form-control" id="tday" name="employeeid">
+                        
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="SortOrder">Experience</label>
+                        <input type="text" class="form-control" id="sort_order" name="experience"placeholder="experience">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="Section">Date of Joining</label>
+                        <input type="text" class="form-control" id="section" name="doj">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="Section">Current Shift</label>
+                        <input type="text" class="form-control" id="section" name="shift">
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-end flex-column">
+                        <div>
+                          <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </div>
+                    </div>
+                  </div>
+                  </form>
+                
+                
+               
+            </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+    </body>
+</html>

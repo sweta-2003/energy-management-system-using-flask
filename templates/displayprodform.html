@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .table{
+                margin:4%;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+           <!-- Latest compiled and minified CSS -->
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+    </head>
+    <body>
+
+        <section class="container table">
+            <h3>PRODUCTIONS</h3>
+               
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Resource Name</th>
+                        <th scope="col">Section</th>
+                       
+                        
+                        <th scope="col">Total Day Productions</th>
+                       
+                        <th scope="col">Shift</th>
+                        <th scope="col">Remark</th>
+                        <th scope="col">Date and Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in pro%}
+                      <tr>
+                        <th scope="row">{{row['id']}}</th>
+                        <td>{{row['date']}}</td>
+                        <td>{{row['resourcename']}}</td>
+                        <td>{{row['section']}}</td>
+                        
+                       
+                        <td>{{row['totalProductions']}}</td>
+                        <td>{{row['shift']}}</td>
+                        <td>{{row['remark']}}</td>
+                        <td>{{row['dateandtime']}}</td>
+                        
+                        <td>
+                           <a href="/deletepro/{{row['id']}}"> <button type="button" class="btn btn-outline-danger">Delete</button></a>
+                            </td>
+                      </tr>
+                     {%endfor %}
+
+                    </tbody>
+                  </table>
+    
+        </section>
+        <script src="" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+    </body>
+</html>
